@@ -11,7 +11,7 @@ function upload() {
 function clear(){
   var canvasop = document.getElementById('canop');
   ctx = canvasop.getContext("2d");
-  context.clearRect(0, 0, 500, 500);
+  canvasop.clearRect(0, 0, 500, 500);
 }
 
 function toGray(){
