@@ -1,17 +1,17 @@
 var image;
 var Oimg;
 
+
 function upload() {
-  var fileinput =                    document.getElementById('finput');
+  var fileinput = document.getElementById('finput');
   var canvas = document.getElementById('imgcan');
   image = new SimpleImage(fileinput);
-  Oimg = new SimpleImage('image');
+  Oimg = new SimpleImage(image);
   image.drawTo(canvas);
 }
 function clear(){
-  var canvasop = document.getElementById('canop');
-  ctx = canvasop.getContext("2d");
-  canvasop.clearRect(0, 0, 500, 500);
+   var canvasop = document.getElementById('canop');
+    image.drawTo(canvasop);
 }
 
 function toGray(){
